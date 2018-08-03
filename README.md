@@ -40,6 +40,7 @@ The function 3 uses the other ones.
 While identifying user searches, this code uses regular expression (REGEX) in function 2. REGEX analyzes sql command similar to as shown below and detects search_phrases:
 
 `1` select * from target_table where column_name2 like '%search_phrase%' or column_name like '%search_phrase%'
+
 `2` select * from target_table where column_name like '%search_phrase%'
 
 If different kind of sql commands are used, then changing the REGEX rule will be enough. The other processes does not need to be changed.
