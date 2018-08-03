@@ -14,7 +14,7 @@ The gap between packaging mysql log and running the code depends on system featu
 # Before starting to analyze
 The name of database, table and column are required as well as mysql log file path.
 
-max_execution_time in php.ini file may need to be increased. Because, while anaylzing timeout may be occurred.
+max_execution_time in php.ini file may need to be increased. Because, timeout may be occurred while analyzing.
 
 # Explanations of the functions in the code
 There are 3 functions created in the code.
