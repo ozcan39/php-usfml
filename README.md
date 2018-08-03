@@ -1,4 +1,4 @@
-# usfml
+# php-usfml
 This code analyzes mysql log file for detecting web user searches. It was used to improve usability of a website by detecting user site-in searches.
 
 It checks queries which made by users and finds out search phrases with word counts.
