@@ -8,23 +8,29 @@ Search phrases with word count can be used for identifying user interests. Hereb
 # How i used
 I used this code with one day logrotated mysql log. Before anaylzing, daily mysql log was packaged (every day at 00:00 AM) and then this code was run with a cron trigger at 03:00 AM for analyzing packaged mysql log. For mysql logrotate, the configurations below used.
 
-`
-/var/log/mysql/mysql.log {
-        daily
-        rotate 1
-        missingok
-        create 644 mysql mysql
-        nocompress
-        .
-        .
-        .
-        
-`
+```
+var/log/mysql/mysql.log {
+
+daily
+
+rotate 1
+
+missing ok
+
+create 644 mysql mysql
+
+nocompress
+
+.
+
+.
+
+.
+```
 
 After analyzing, results saved in SQlite database and then used for improving usability of a website.
 
 The gap between packaging mysql log and running the code depends on system features.
-
 
 # Before starting to analyze
 The name of database, table and column are required as well as mysql log file path.
